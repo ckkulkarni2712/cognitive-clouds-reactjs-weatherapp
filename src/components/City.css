@@ -1,0 +1,32 @@
+.country-search{
+    position: fixed;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   background-color: #eee;
+   padding: 30px
+}
+.country-search img{
+    position: relative;
+    top: 50%;
+    width: 500px;
+    height: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.country, .pop, .latitude, .long{
+    margin-top: 10px;
+    margin-left: 200px;
+    position: relative;
+    right: 5% 
+}
+.weatherbutton{
+    position: relative;
+    right: 2%
+}
+.weatherbutton button{
+    background-color: rgb(160, 40, 160);
+   border-color: rgb(160, 40, 160);
+   border-radius: 10%;
+}

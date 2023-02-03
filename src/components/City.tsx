@@ -3,7 +3,6 @@ import { Link, useLocation } from 'react-router-dom'
 import axios from 'axios';
 import './City.css'
 import 'bootstrap/dist/css/bootstrap.css';
-import LocationSearchingIcon from '@mui/icons-material/LocationSearching';
 const City = (props: any) => {
     const location = useLocation();
     const country = location.state;
@@ -37,7 +36,8 @@ const City = (props: any) => {
         <div className='pop'>Population: {population}</div>
           <div className='latitude'>Latitude: {lat}</div>
         <div className='long'>Longitude: {lng}</div>
-        <div className='weatherbutton'><button className='btn btn-info'><Link to="/Weather" state={{city:capital}}><LocationSearchingIcon/></Link> </button></div>
+      <div className='weatherbutton'><button className='btn btn-info'><Link to="/Weather" state={{ city: capital }}
+        style={{ textDecoration: 'none', color: 'white' }}>Capital Weather</Link> </button></div>
     </div>
   )
 }

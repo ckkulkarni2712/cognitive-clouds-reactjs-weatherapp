@@ -1,0 +1,16 @@
+.weather_display{
+    position: fixed;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   background-color: #eee;
+   padding: 30px
+}
+.city, .temp, .icon, .descr, .pressure, .humid, .rain{
+    position: relative;
+    align-self: center;
+}
+button{
+    margin-left: 180px;
+    margin-top: 10px;
+}

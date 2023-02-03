@@ -13,7 +13,7 @@ const Base = ():JSX.Element => {
       <div className='display'>
                 <input type="text" onChange={searchData}
                       className="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
-          <button disabled={name.length < 1}><Link to="/City" state={{ name: name }}><TravelExploreIcon /></Link></button>
+          <button disabled={name.length < 1} className='btn btn-primary'><Link to="/City" state={{ name: name }}  style={{ textDecoration: 'none',color: 'white' }}>Submit</Link></button>
       </div>
   )
 }
