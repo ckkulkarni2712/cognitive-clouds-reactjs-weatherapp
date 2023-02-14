@@ -1,6 +1,5 @@
 import { ChangeEvent, useState } from 'react'
 import './Base.css';
-import TravelExploreIcon from '@mui/icons-material/TravelExplore';
 import 'bootstrap/dist/css/bootstrap.css';
 import { Link } from 'react-router-dom';
 const Base = ():JSX.Element => {
