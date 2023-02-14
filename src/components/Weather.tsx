@@ -2,7 +2,6 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom';
 import './Weather.css'
-import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 const Weather = (props: any) => {
     const location = useLocation();
     const capital = location.state;
@@ -34,14 +33,7 @@ const Weather = (props: any) => {
                     <div className='descr'>Description: {description}</div>
                     <div className='pressure'>Pressure: {pres}</div>
                     <div className='humid'>Humidity: {humid}</div>
-                    <div className='rain'>Precipitation: {precip}%</div>
-          <button>
-              <Link to="/">
-                  <ArrowBackIcon />
-              </Link>
-        </button>
-
-
+          <div className='rain'>Precipitation: {precip}%</div>
 
     </div>
   )
